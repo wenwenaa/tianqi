@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/rem.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+   <div class="root">
+   	<section class="sec-main">
+   		<div class="location">
+   			<p>山西 太原</p>
+   		</div>
+   		<div class="layer">
+   			<div class="land">
+   				<p id="wendu">&nbsp;32°</p>
+   				<p id="zhuangku">多云</p>
+   				<p id="feng">南风 2级</p>
+   				<p id="tips">光芒透过云缝，洒向大地~</p>
+   			</div>
+   		</div>
+          <div class="ct-aqi">
+            <p id="til">良</p>
+            <p id="value">99</p>
+         </div>
+   	</section>
+   	<section class="tom">
+   		<div class="item">
+   			<div class="top">
+   				<p class="date">今天</p>
+   				<p class="temperature" id="today">36/34°</p>
+   			</div>
+   			<div class="bottom">
+   				<p class="weather" id="towe">多云</p>
+   				<img src="img/1.png" alt="" id="topic">
+   			</div>
+   		</div>
+   		<div class="item">
+   			<div class="top">
+   				<p class="date">明天</p>
+   				<p class="temperature" id="tomo">38/25°</p>
+   			</div>
+   			<div class="bottom">
+   				<p class="weather" id="mowe">多云</p>
+   				<img src="img/1.png" alt="" id="mopic">
+   			</div>
+   		</div>
+   	</section>
+   	<section class="hours">
+   		<ul>
+   			<!-- <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li>
+            <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li>
+            <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li>
+            <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li>
+            <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li>
+            <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li>
+            <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li>
+            <li>
+               <p class="time">17:00</p>
+                <img src="img/1.png" alt="">
+                <p class="degree">35°</p>
+            </li> -->
+   			
+   		</ul>
+   	</section>
+   	<section class="days">
+   		<ul>
+   		<!--    <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li>
+         <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li>
+         <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li>
+         <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li>
+         <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li>
+         <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li>
+         <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li>
+         <li>
+            <p id="ri">06/27</p>
+            <p>多云</p>
+            <img src="img/1.png" alt="">
+            <p>38°</p>
+            <p>25°</p>
+            <img src="img/14.png" alt="">
+            <p id="ri">北风</p>
+            <p id="ri">4级</p>
+         </li> -->
+   		</ul>
+   	</section>
+   </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+@import url('base.css');
+body{
+	background-color: #f4f4f4;
+}
+.sec-main{
+	width: 4.14rem;
+	height: 4.7rem;
+	background:url('../img/screen.png') no-repeat bottom,url('../img/screen2.png') no-repeat bottom,-webkit-linear-gradient(-90deg,#50ade8,#7ae0fa);
+    background-size: 100%;
+	overflow: hidden;
+}
+.location{
+	width: 100%;
+	height: 16px;
+}
+.location p{
+	height: 16px;
+    line-height: 16px;
+    width: 76%;
+    margin: 18px 12% 6px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+.layer{
+	width: 4.14rem;
+	height: 4.1rem;
+	margin-top: 0.44rem;
+	overflow: hidden;
+}
+.ct-aqi{
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.12);
+    height: 44px;
+    padding: 8px 12px;
+    position: absolute;
+    border-radius: 8px;
+    background: #ffbf62;
+    box-sizing: border-box;
+    top: 67px;
+    left: 8px;
+}
+#til{
+    opacity: .8;
+    font-size: 12px;
+    color: #fff;
+    line-height: 12px;
+    height: 12px;
+    margin-bottom: 3px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#value{
+    margin-top: 2px;
+    font-size: 12px;
+    color: #fff;
+    height: 14px;
+    line-height: 14px;
+     text-align: center;
+    box-sizing: border-box;
+}
+.land{
+	width: 100%;
+	height: 3.5rem;
+	margin-top: 0.6rem;
+	
+}
+#wendu{
+	font-size: 62px;
+	text-align: center;
+	font-weight: 400;
+	color: #fff;
+}
+#zhuangku{
+	font-size: 22px;
+    color: #fff;
+    line-height: 22px;
+    height: 22px;
+    margin-top: 8px;
+    text-align: center;
+}
+#feng{
+	color: #fff;
+	font-size: 14px;
+	height: 14px;
+	line-height: 14px;
+	text-align: center;
+	margin-top: 10px;
+
+}
+#tips{
+	font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    height: 16px;
+    margin: 50px 60px 0;
+    text-align: center;
+}
+/* tomorrow */
+.tom{
+	background: #fff;
+    height: 1.03rem;
+    padding-top: 0.26rem;
+    border-bottom: 0.01rem solid #e4e4e4;
+    margin-bottom: 0.1rem;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.tom:after {
+    content: "";
+    position: absolute;
+    width: 0.01rem;
+    height: 0.52rem;
+    background-color: #f0f0f0;
+    left: 50%;
+    top: 0.26rem;
+}
+.item{
+	float: left;
+    width: 50%;
+    height: 0.52rem;
+    font-size: 0.14rem;
+    color: #434343;
+    line-height: 0.14rem;
+    padding: 0 0.2rem;
+    box-sizing: border-box;
+}
+.item .top{
+	height: 0.12rem;
+    margin-bottom: 0.13rem;
+}
+.item .bottom{
+	height: 0.22rem;
+}
+.item .top .date{
+  float: left;
+}
+.item .top .temperature{
+	float: right;
+}
+.item .bottom p{
+	float: left;
+	line-height: 0.22rem;
+} 
+.item .bottom img{
+	float: right;
+    height: 0.22rem;
+    width: 0.22rem;
+}
+/* hours */
+.hours{
+	height: 1.36rem;
+    border-bottom: 0.01rem solid #e4e4e4;
+    background-color: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 0.1rem;
+    padding-top: 0.3rem;
+    box-sizing: border-box;
+}
+.hours ul{
+	height: 100%;
+	display: flex;
+}
+.hours ul li{
+   width: 0.64rem;
+   flex-shrink: 0;
+}
+.hours::-webkit-scrollbar{
+	height: 0;
+}
+.hours ul li img{
+	height: 24px;
+    width: 24px;
+    display: block;
+    margin: 15px auto;
+}
+.hours ul li p{
+	text-align: center;
+}
+.hours ul li .time{
+	font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+    color: #999;
+}
+.hours ul li .degree{
+	font-size: 14px;
+    color: #434343;
+    line-height: 14px;
+    height: 14px;
+}
+/* days */
+.days{
+	border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    background-color: #fff;
+    height: 391px;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+.days ul{
+	width: 100%;
+	display: flex;
+}
+.days ul li{
+	width: 0.69rem;
+	flex-shrink: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+	height: 3.42rem;
+
+}
+.days::-webkit-scrollbar{
+	height: 0;
+}
+.days ul li p{
+	font-size: 0.14rem;
+    color: #434343;
+    line-height: 0.14rem;
+    height: 0.14rem;
+    text-align: center;
+    width: 100%;
+}
+#ri{
+    font-size: 0.12rem;
+    color: #999;
+    line-height: 0.12rem;
+    height: 0.12rem;
+    text-align: center;
+}
+.days ul li img{
+	width: 0.24rem;
+    height: 0.24rem;
+    display: block;
+    margin: 0 auto;
+}
